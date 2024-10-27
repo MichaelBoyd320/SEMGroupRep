@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-class MainTest {
+public class MainTest {
 
     static Main main;
     private Connection con;
