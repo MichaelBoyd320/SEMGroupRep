@@ -17,7 +17,8 @@ jobs:
           distribution: 'adopt'
       - name: Unit Tests
         run: |
-          run: docker build -t my-db-image ./db && docker run -d -p 3306:3306 --name my-db-container my-db-image
+          docker build -t database ./db 
+          docker run --name world -dp 33060:3306 database
           mvn -Dtest=com.napier.sem.MainTest test
 
   build:
