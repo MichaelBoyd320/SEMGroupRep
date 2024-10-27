@@ -16,7 +16,9 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Unit Tests
-        run: mvn -Dtest=com.napier.sem.MainTest test
+        run: |
+          run: docker build -t my-db-image ./db && docker run -d -p 3306:3306 --name my-db-container my-db-image
+          mvn -Dtest=com.napier.sem.MainTest test
 
   build:
     name: Build and Start Using docker compose
