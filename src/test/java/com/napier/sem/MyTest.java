@@ -1,42 +1,41 @@
 package com.napier.sem;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeAll;
 import static org.junit.jupiter.api.Assertions.*;
-import java.sql.*;
-import static org.mockito.Mockito.*;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 class MainTest {
 
+    static Main main;
+    private Connection con;
+
+    // Initialize Main and establish a database connection
+    @BeforeAll
+    static void init() {
+        main = new Main();
+        main.connect("localhost:33060", 30000);
+    }
+
     @Test
-    void testGetCapitalsInRegion() throws SQLException {
-        // Mock the PreparedStatement and ResultSet
-        PreparedStatement mockPstmt = mock(PreparedStatement.class);
-        ResultSet mockRset = mock(ResultSet.class);
-
-        // Mock the return data of the ResultSet
-        when(mockRset.next()).thenReturn(true).thenReturn(true).thenReturn(false);  // Simulates 2 rows
-        when(mockRset.getString("Name")).thenReturn("Berlin").thenReturn("Paris");
-        when(mockRset.getInt("Population")).thenReturn(3500000).thenReturn(2100000);
-
-        // Mock the PreparedStatement to return the mocked ResultSet
-        when(mockPstmt.executeQuery()).thenReturn(mockRset);
-
-        // Create an instance of the class to test
-        ListOfCapitalsInRegion capitalsInRegion = new ListOfCapitalsInRegion(null);  // Connection is null for simplicity
-
-        // Override the PreparedStatement in the class with the mocked one
-        capitalsInRegion.setPreparedStatement(mockPstmt);  // Assuming you modify the class for testing
-
-        // Capture the output with a StringBuilder
+    void testGetCapitalsInRegion() {
+        // Create an instance of ListOfCapitalsInRegion with the current connection
+        ListOfCapitalsInRegion testListOfCap = new ListOfCapitalsInRegion(main.con);
         StringBuilder output = new StringBuilder();
-        capitalsInRegion.getCapitalsInRegion("Europe", output);  // Passing a StringBuilder for output capturing
 
-        // Expected results
-        String expectedFirstCity = "Hauptstadt: Berlin - Bevölkerung: 3500000\n";
-        String expectedSecondCity = "Hauptstadt: Paris - Bevölkerung: 2100000\n";
+        // Call the method to get capitals in the specified region
+        testListOfCap.getCapitalsInRegion("Western Europe", output);
 
-        // Assertions to compare the expected and actual results
-        assertTrue(output.toString().contains(expectedFirstCity));
-        assertTrue(output.toString().contains(expectedSecondCity));
+        // Expected output
+        String expectedOutput = "Capital: Berlin - Population: 3386667\n" +
+                "Capital: Paris - Population: 2125246\n";
+
+        // Check if the output contains the expected content
+        assertTrue(output.toString().contains(expectedOutput));
     }
 }

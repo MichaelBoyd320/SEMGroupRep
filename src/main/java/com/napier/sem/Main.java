@@ -10,7 +10,7 @@ public class Main {
         // Create new Application and connect to database
         Main a = new Main();
 
-        String capital = "Europe";
+        String region = "Western Europe";
 
         if (args.length < 1) {
             a.connect("localhost:33060", 10000);
@@ -21,15 +21,15 @@ public class Main {
         // GET DATA TEST FUNCTION THOUGH
 
         StringBuilder output = new StringBuilder();
-        ListOfCapitalsInRegion ListofCaps = new ListOfCapitalsInRegion(a.con);
-        ListofCaps.getCapitalsInRegion(capital, output);
+        ListOfCapitalsInRegion ListOfCaps = new ListOfCapitalsInRegion(a.con);
+        ListOfCaps.getCapitalsInRegion(region, output);
         //
 
         // Disconnect from database
         a.disconnect();
     }
 
-    private Connection con = null;
+    public Connection con = null;
 
     public void connect(String location, int delay) {
         try {
@@ -51,7 +51,9 @@ public class Main {
                 }
 
                 // Connect to database
-                con = DriverManager.getConnection("jdbc:mysql://db:3306/world?useSSL=false", "root", "example");;
+                con = DriverManager.getConnection("jdbc:mysql://" + location
+                                + "/world?allowPublicKeyRetrieval=true&useSSL=false",
+                        "root", "example");
                 System.out.println("Successfully connected");
                 break;
             } catch (SQLException sqle) {
