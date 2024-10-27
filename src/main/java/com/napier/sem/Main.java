@@ -19,8 +19,10 @@ public class Main {
         }
 
         // GET DATA TEST FUNCTION THOUGH
+
+        StringBuilder output = new StringBuilder();
         ListOfCapitalsInRegion ListofCaps = new ListOfCapitalsInRegion(a.con);
-        ListofCaps.getCapitalsInRegion(capital);
+        ListofCaps.getCapitalsInRegion(capital, output);
         //
 
         // Disconnect from database

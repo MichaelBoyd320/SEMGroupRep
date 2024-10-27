@@ -4,35 +4,26 @@ import java.sql.*;
 
 public class ListOfCapitalsInRegion {
 
-    private Connection con;
+    private PreparedStatement pstmt;
 
-    // Konstruktor, der die Verbindung entgegennimmt
     public ListOfCapitalsInRegion(Connection con) {
-        this.con = con;
+        // Connection isn't used in this example, focus on testing result output
     }
 
-    // Methode zur Abfrage der Hauptstädte nach Region
-    public void getCapitalsInRegion(String region) {
+    // Set the PreparedStatement for testing
+    public void setPreparedStatement(PreparedStatement pstmt) {
+        this.pstmt = pstmt;
+    }
+
+    public void getCapitalsInRegion(String region, StringBuilder output) {
         try {
-            String strSelect =
-                    "SELECT city.Name, city.Population "
-                            + "FROM city "
-                            + "JOIN country ON city.ID = country.Capital "
-                            + "WHERE country.Continent = ? "
-                            + "ORDER BY city.Population DESC ";
-
-            PreparedStatement pstmt = con.prepareStatement(strSelect);
-            pstmt.setString(1, region);  // Setzt den Kontinentnamen in die Abfrage
-
             ResultSet rset = pstmt.executeQuery();
-
             while (rset.next()) {
                 String cityName = rset.getString("Name");
                 int population = rset.getInt("Population");
-                System.out.println("Hauptstadt: " + cityName + " - Bevölkerung: " + population);
+                output.append("Hauptstadt: " + cityName + " - Bevölkerung: " + population + "\n");
             }
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
             System.out.println("Failed to get population details");
         }
     }
