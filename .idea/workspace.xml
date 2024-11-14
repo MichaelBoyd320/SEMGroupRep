@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e507775-62a4-455b-a6c1-0f4c309ff993" name="Changes" comment="Added integration test">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
-    </list>
+    <list default="true" id="7e507775-62a4-455b-a6c1-0f4c309ff993" name="Changes" comment="Added integration test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,7 +170,7 @@
       <workItem from="1730062312364" duration="81000" />
       <workItem from="1730380971940" duration="729000" />
       <workItem from="1730992905474" duration="2645000" />
-      <workItem from="1731594118409" duration="890000" />
+      <workItem from="1731594118409" duration="1227000" />
     </task>
     <task id="LOCAL-00001" summary="Merge feature into develop">
       <option name="closed" value="true" />
@@ -206,7 +204,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731594836841</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added integration test">
+      <option name="closed" value="true" />
+      <created>1731595027259</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731595027259</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added integration test">
+      <option name="closed" value="true" />
+      <created>1731595228409</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731595228409</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
