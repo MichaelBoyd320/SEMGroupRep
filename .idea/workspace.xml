@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e507775-62a4-455b-a6c1-0f4c309ff993" name="Changes" comment="Added integration test" />
+    <list default="true" id="7e507775-62a4-455b-a6c1-0f4c309ff993" name="Changes" comment="Updated pom.xml to provide code coverage">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,6 +59,8 @@
     "Application.Main.executor": "Run",
     "Docker.docker-compose.yml.db: Compose Deployment.executor": "Run",
     "JUnit.MainTest.executor": "Run",
+    "Maven.semAssessment [clean].executor": "Run",
+    "Maven.semAssessment [compile].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "feature/integration-test",
     "kotlin-language-version-configured": "true",
@@ -170,7 +174,7 @@
       <workItem from="1730062312364" duration="81000" />
       <workItem from="1730380971940" duration="729000" />
       <workItem from="1730992905474" duration="2645000" />
-      <workItem from="1731594118409" duration="1227000" />
+      <workItem from="1731594118409" duration="1573000" />
     </task>
     <task id="LOCAL-00001" summary="Merge feature into develop">
       <option name="closed" value="true" />
@@ -220,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731595228409</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Updated pom.xml to provide code coverage">
+      <option name="closed" value="true" />
+      <created>1731595590626</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1731595590626</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +242,7 @@
     <MESSAGE value="Workflow should now support Tests" />
     <MESSAGE value="Merge feature into develop" />
     <MESSAGE value="Added integration test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added integration test" />
+    <MESSAGE value="Updated pom.xml to provide code coverage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated pom.xml to provide code coverage" />
   </component>
 </project>
