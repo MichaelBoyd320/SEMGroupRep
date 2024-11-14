@@ -34,7 +34,7 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
-      - name: Integration Tests
+      - name: Integration Tests and CodeCov
         run: |
           docker build -t database ./world-db 
           docker run --name world -dp 33060:3306 database
@@ -42,7 +42,7 @@ jobs:
           docker stop world
           docker rm world
           docker image rm database
-          - name: CodeCov
+      - name: CodeCov
         uses: codecov/codecov-action@v4.0.1
         with:
           token: ${{ secrets.CODECOV_TOKEN }} # now required for public repos too
