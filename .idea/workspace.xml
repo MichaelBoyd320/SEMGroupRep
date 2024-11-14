@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e507775-62a4-455b-a6c1-0f4c309ff993" name="Changes" comment="Added integration test">
-      <changelist_data name="EliasBayer137" email="40726424@live.napier.ac.uk" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MainIntegrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -175,7 +173,7 @@
       <workItem from="1730062312364" duration="81000" />
       <workItem from="1730380971940" duration="729000" />
       <workItem from="1730992905474" duration="2645000" />
-      <workItem from="1731594118409" duration="323000" />
+      <workItem from="1731594118409" duration="702000" />
     </task>
     <task id="LOCAL-00001" summary="Merge feature into develop">
       <option name="closed" value="true" />
@@ -193,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731594442604</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added integration test">
+      <option name="closed" value="true" />
+      <created>1731594493116</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731594493116</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -18,7 +18,7 @@ jobs:
       - name: Unit Tests
         run: |
           docker build -t database ./world-db 
-          docker run --name world -dp 33060:3306 database
+          docker run --name semassessment-db-1 -dp 33060:3306 database
           mvn -Dtest=com.napier.sem.MainTest test
 
   IntegrationTests:
