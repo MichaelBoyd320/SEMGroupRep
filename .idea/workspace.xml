@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e507775-62a4-455b-a6c1-0f4c309ff993" name="Changes" comment="Merge develop into main">
+    <list default="true" id="7e507775-62a4-455b-a6c1-0f4c309ff993" name="Changes" comment="Added integration test">
       <changelist_data name="EliasBayer137" email="40726424@live.napier.ac.uk" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MainIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +24,11 @@
         <option value="EliasBayer137 &lt;40726424@live.napier.ac.uk&gt;" />
       </list>
     </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -36,10 +43,10 @@
     &quot;accountId&quot;: &quot;145cce15-4858-41b6-ac77-91c00100120e&quot;
   }
 }</component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 2
@@ -56,9 +63,9 @@
     "Docker.docker-compose.yml.db: Compose Deployment.executor": "Run",
     "JUnit.MainTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "feature/integration-test",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/elias/Desktop/Edinburgh/Software Engineering Methods/Projects/seMethods",
+    "last_opened_file_path": "C:/Users/elias/Desktop/Edinburgh/Software Engineering Methods/Projects/semAssessment",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -168,6 +175,7 @@
       <workItem from="1730062312364" duration="81000" />
       <workItem from="1730380971940" duration="729000" />
       <workItem from="1730992905474" duration="2645000" />
+      <workItem from="1731594118409" duration="323000" />
     </task>
     <task id="LOCAL-00001" summary="Merge feature into develop">
       <option name="closed" value="true" />
@@ -177,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730063159081</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added integration test">
+      <option name="closed" value="true" />
+      <created>1731594442604</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731594442604</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +202,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Workflow should now support Tests" />
     <MESSAGE value="Merge feature into develop" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge feature into develop" />
+    <MESSAGE value="Added integration test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added integration test" />
   </component>
 </project>
