@@ -5,6 +5,7 @@ import org.junit.jupiter.api.BeforeAll;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.sql.Connection;
+import java.util.List;
 
 public class MainIntegrationTest {
 
@@ -25,7 +26,9 @@ public class MainIntegrationTest {
         StringBuilder output = new StringBuilder();
 
         // Call the method to get capitals in the specified region
-        testListOfCap.getCapitalsInRegion("Western Europe", output);
+        testListOfCap.getRegionCapitals("Western Europe");
+        List<RegionCapital> TestCapitals = testListOfCap.getRegionCapitals("Western Europe");
+        testListOfCap.printCapitalsinRegionbyPopulation(TestCapitals, output);
 
         // Expected output
         String expectedOutput = "Capital: Berlin - Population: 3386667\n" +

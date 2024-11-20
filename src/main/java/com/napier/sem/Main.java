@@ -2,6 +2,7 @@ package com.napier.sem;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.List;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -20,9 +21,12 @@ public class Main {
 
         // GET DATA TEST FUNCTION THOUGH
 
+        ListOfCapitalsInRegion listOfCaps = new ListOfCapitalsInRegion(a.con);
+
+        // Abfrage durchführen und Ergebnisse formatieren
+        List<RegionCapital> capitals = listOfCaps.getRegionCapitals(region);
         StringBuilder output = new StringBuilder();
-        ListOfCapitalsInRegion ListOfCaps = new ListOfCapitalsInRegion(a.con);
-        ListOfCaps.getCapitalsInRegion(region, output);
+        listOfCaps.printCapitalsinRegionbyPopulation(capitals, output);
         //
 
         // Disconnect from database
