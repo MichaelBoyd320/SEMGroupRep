@@ -1,3 +1,4 @@
+com\napier\sem\RegionsGlobal.class
 com\napier\sem\Main.class
-com\napier\sem\RegionCapital.class
 com\napier\sem\ListOfCapitalsInRegion.class
+com\napier\sem\Region.class

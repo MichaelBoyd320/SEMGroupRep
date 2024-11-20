@@ -19,14 +19,18 @@ public class Main {
             a.connect(args[0], Integer.parseInt(args[1]));
         }
 
-        // GET DATA TEST FUNCTION THOUGH
-
+        //CAPTIALS IN REGION
         ListOfCapitalsInRegion listOfCaps = new ListOfCapitalsInRegion(a.con);
-
-        // Abfrage durchführen und Ergebnisse formatieren
-        List<RegionCapital> capitals = listOfCaps.getRegionCapitals(region);
+        List<Region> capitals = listOfCaps.getRegionCapitals(region);
         StringBuilder output = new StringBuilder();
         listOfCaps.printCapitalsinRegionbyPopulation(capitals, output);
+        //
+
+        //REGIONS
+        RegionsGlobal globalRegions = new RegionsGlobal(a.con);
+        List<Region> regions = globalRegions.getRegions();
+        output = new StringBuilder();
+        globalRegions.printRegions(regions, output);
         //
 
         // Disconnect from database

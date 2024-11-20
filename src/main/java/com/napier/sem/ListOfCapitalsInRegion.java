@@ -14,26 +14,32 @@ public class ListOfCapitalsInRegion {
     }
 
     // Method to query capitals by region and output results to the StringBuilder
-    public List<RegionCapital> getRegionCapitals(String region) {
+    public List<Region> getRegionCapitals(String region) {
         String strSelect = "SELECT city.Name, city.Population FROM city "
                 + "JOIN country ON city.ID = country.Capital "
                 + "WHERE country.Region = ? "
                 + "ORDER BY city.Population DESC";
 
-        List<RegionCapital> capitals = new ArrayList<>();
+        List<Region> capitals = new ArrayList<>();
 
         try (PreparedStatement pstmt = con.prepareStatement(strSelect)) {
-            // Setze den Parameter für die Region
+            // Set parameter for region
             pstmt.setString(1, region);
 
-            // Führe die Abfrage aus
+            // execute Query
             ResultSet rset = pstmt.executeQuery();
 
-            // Füge die Ergebnisse zur Liste hinzu
+            // Add results to list
             while (rset.next()) {
-                String cityName = rset.getString("Name");
-                int population = rset.getInt("Population");
-                capitals.add(new RegionCapital(cityName, population));
+                // Create a new Region object
+                Region regionObject = new Region();
+
+                // Retrieve values from the ResultSet and set them using setters
+                regionObject.setCityName(rset.getString("Name"));
+                regionObject.setPopulation(rset.getInt("Population"));
+
+                // Add the object to the list
+                capitals.add(regionObject);
             }
         } catch (SQLException e) {
             System.out.println("Failed to get population details: " + e.getMessage());
@@ -42,8 +48,8 @@ public class ListOfCapitalsInRegion {
         return capitals;
     }
 
-    public void printCapitalsinRegionbyPopulation(List<RegionCapital> capitals, StringBuilder output) {
-        for (RegionCapital capital : capitals) {
+    public void printCapitalsinRegionbyPopulation(List<Region> capitals, StringBuilder output) {
+        for (Region capital : capitals) {
             output.append("Capital: ")
                     .append(capital.getCityName())
                     .append(" - Population: ")
