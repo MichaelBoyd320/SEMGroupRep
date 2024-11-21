@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e507775-62a4-455b-a6c1-0f4c309ff993" name="Changes" comment="Added another class with methods to print the regions, sorted by continent. Then added unittests and integration tests">
-      <changelist_data name="EliasBayer137" email="40726424@live.napier.ac.uk" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/napier/sem/RegionsGlobal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assessment Tasks/Tasks for Code Reviews.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Assessment Tasks/Tasks for Code Reviews.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/napier/sem/ListOfCapitalsInRegion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/napier/sem/ListOfCapitalsInRegion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/napier/sem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/napier/sem/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/napier/sem/RegionCapital.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/napier/sem/Region.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/MainIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MainIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/napier/sem/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/napier/sem/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/napier/sem/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/napier/sem/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="feature/data-base-integration" />
+    <option name="BRANCH" value="origin/develop" />
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -72,7 +61,7 @@
     "Docker.docker-compose.yml.db: Compose Deployment.executor": "Run",
     "JUnit.MainIntegrationTest.executor": "Run",
     "JUnit.MainIntegrationTest.testGetCapitalsInRegion.executor": "Run",
-    "JUnit.MainTest.executor": "Coverage",
+    "JUnit.MainTest.executor": "Run",
     "JUnit.MainTest.testprintCapitalsinRegionbyPopulation.executor": "Run",
     "JUnit.MainTest.testprintRegions.executor": "Run",
     "Maven.semAssessment [clean].executor": "Run",
@@ -187,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MainTest.testprintRegions" />
         <item itemvalue="JUnit.MainTest.testprintCapitalsinRegionbyPopulation" />
         <item itemvalue="JUnit.MainIntegrationTest.testGetCapitalsInRegion" />
         <item itemvalue="JUnit.MainIntegrationTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.MainTest.testprintRegions" />
       </list>
     </recent_temporary>
   </component>
@@ -216,6 +205,7 @@
       <workItem from="1730992905474" duration="2645000" />
       <workItem from="1731594118409" duration="2429000" />
       <workItem from="1732099450495" duration="8742000" />
+      <workItem from="1732194444618" duration="2790000" />
     </task>
     <task id="LOCAL-00001" summary="Merge feature into develop">
       <option name="closed" value="true" />
@@ -297,7 +287,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732101992759</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added another class with methods to print the regions, sorted by continent. Then added unittests and integration tests">
+      <option name="closed" value="true" />
+      <created>1732194546914</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1732194546914</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
