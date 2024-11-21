@@ -40,11 +40,11 @@ public class MainIntegrationTest {
 
     @Test
     void testgetRegions(){
-        // Create an instance of ListOfCapitalsInRegion with the current connection
+        // Create an instance of RegionsGlobal with the current connection
         RegionsGlobal testglobalRegions = new RegionsGlobal(main.con);
         StringBuilder output = new StringBuilder();
 
-        // Call the method to get capitals in the specified region
+        // Call the method to get all regions
         testglobalRegions.getRegions();
         List<Region> TestRegions = testglobalRegions.getRegions();
         testglobalRegions.printRegions(TestRegions, output);
