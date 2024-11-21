@@ -21,6 +21,36 @@ jobs:
           docker run --name world -dp 33060:3306 database
           mvn -Dtest=com.napier.sem.MainTest test
 
+  IntegrationTests:
+    name: Integration Tests
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+          distribution: 'adopt'
+      - name: Integration Tests and CodeCov
+        run: |
+          docker build -t database ./world-db 
+          docker run --name world -dp 33060:3306 database
+          mvn -Dtest=com.napier.sem.MainIntegrationTest test
+          docker stop world
+          docker rm world
+          docker image rm database
+      - name: CodeCov
+        uses: codecov/codecov-action@v4.0.1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }} # now required for public repos too
+          directory: ./target/site/jacoco
+          flags: Integration Tests # optional
+          verbose: true # optional (default = false)
+          slug: EliasBayer137/SEMGroupRep
+
   build:
     name: Build and Start Using docker compose
     runs-on: ubuntu-20.04
