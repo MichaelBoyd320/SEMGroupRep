@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e507775-62a4-455b-a6c1-0f4c309ff993" name="Changes" comment="Added another class with methods to print the regions, sorted by continent. Then added unittests and integration tests">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MainIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MainIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/issue_form.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +34,12 @@
     &quot;assignee&quot;: &quot;EliasBayer137&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/MichaelBoyd320/SEMGroupRep.git&quot;,
-    &quot;accountId&quot;: &quot;145cce15-4858-41b6-ac77-91c00100120e&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/semGroup444/SEMGroupRep.git",
+    "accountId": "145cce15-4858-41b6-ac77-91c00100120e"
   }
-}</component>
+}]]></component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -68,7 +67,7 @@
     "Maven.semAssessment [compile].executor": "Run",
     "Maven.semAssessment [package].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/integration-test",
+    "git-widget-placeholder": "EliasBayer137-patch-1",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/elias/Desktop/Edinburgh/Software Engineering Methods/Projects/seMethods",
     "node.js.detected.package.eslint": "true",
@@ -206,6 +205,7 @@
       <workItem from="1731594118409" duration="2429000" />
       <workItem from="1732099450495" duration="8742000" />
       <workItem from="1732194444618" duration="2790000" />
+      <workItem from="1732651650567" duration="129000" />
     </task>
     <task id="LOCAL-00001" summary="Merge feature into develop">
       <option name="closed" value="true" />
@@ -300,6 +300,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Workflow should now support Tests" />
