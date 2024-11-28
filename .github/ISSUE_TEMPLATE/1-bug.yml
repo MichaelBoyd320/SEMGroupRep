@@ -15,7 +15,7 @@ body:
     attributes:
       label: Contact Details
       description: How can we get in touch with you if we need more info?
-      placeholder: 40726424@live.napier.ac.uk
+      placeholder: Enter your mail address
     validations:
       required: false
   - type: textarea
