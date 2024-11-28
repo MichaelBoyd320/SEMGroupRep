@@ -5,6 +5,7 @@ import org.junit.jupiter.api.BeforeAll;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.sql.Connection;
+import java.util.ArrayList;
 import java.util.List;
 
 public class MainIntegrationTest {
@@ -59,5 +60,12 @@ public class MainIntegrationTest {
 
         // Check if the output contains the expected content
         assertTrue(output.toString().contains(expectedOutput));
+    }
+    @Test
+    void testGetCountriesBasedOnPopulation()
+    {
+        PopRep popRep = new PopRep(main.con);
+        ArrayList<Country> countriesInPopOrder = popRep.getCountriesPop();
+        popRep.printCountires(countriesInPopOrder);
     }
 }
