@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e507775-62a4-455b-a6c1-0f4c309ff993" name="Changes" comment="added config.yml">
-      <change afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/2-feature-request.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/3-issues.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/4-support.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/issue_form.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/1-bug.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/1-bug.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/1-bug.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/develop" />
+    <option name="BRANCH" value="origin/EliasBayer137-patch-1" />
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -58,29 +55,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml.db: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MainIntegrationTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MainIntegrationTest.testGetCapitalsInRegion.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MainTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MainTest.testprintCapitalsinRegionbyPopulation.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MainTest.testprintRegions.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.semAssessment [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.semAssessment [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.semAssessment [package].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;EliasBayer137-patch-1&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/elias/Desktop/Edinburgh/Software Engineering Methods/Projects/seMethods&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Docker.docker-compose.yml.db: Compose Deployment.executor": "Run",
+    "JUnit.MainIntegrationTest.executor": "Run",
+    "JUnit.MainIntegrationTest.testGetCapitalsInRegion.executor": "Run",
+    "JUnit.MainTest.executor": "Run",
+    "JUnit.MainTest.testprintCapitalsinRegionbyPopulation.executor": "Run",
+    "JUnit.MainTest.testprintRegions.executor": "Run",
+    "Maven.semAssessment [clean].executor": "Run",
+    "Maven.semAssessment [compile].executor": "Run",
+    "Maven.semAssessment [package].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "EliasBayer137-patch-1",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/elias/Desktop/Edinburgh/Software Engineering Methods/Projects/seMethods",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="JUnit.MainTest.testprintCapitalsinRegionbyPopulation">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.napier.sem.Main" />
