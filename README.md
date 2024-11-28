@@ -35,3 +35,9 @@ This feature is used to getting started with the issues and setting up the data 
 | 23 | The population of people, people living in cities, and people not living in cities in each continent. | ? | ? |
 | 24 | The population of people, people living in cities, and people not living in cities in each region. | ? | ? |
 | 25 | The population of people, people living in cities, and people not living in cities in each country. | ? | ? |
+| 26 | The population of the world. | ? | ? |
+| 27 | The population of a continent. | ? | ? |
+| 28 | The population of a region. | ? | ? |
+| 29 | The population of a country. | ? | ? |
+| 30 | The population of a district. | ? | ? |
+| 31 | The population of a city. | ? | ? |
