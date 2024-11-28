@@ -1,0 +1,58 @@
+name: Issues
+description: Report issues with the program.
+title: "[Issue]: "
+labels: ["Issue"]
+projects: ["semAssessment"]
+assignees:
+  - group23
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report your issue!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: 40726424@live.napier.ac.uk
+    validations:
+      required: false
+  - type: textarea
+    id: what-is-wrong
+    attributes:
+      label: What is wrong? What questions do you have?
+      description: What part of the program are you struggling with?
+      placeholder: Tell us how we can help!
+      value: "There is an issue!"
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of our software are you running?
+      options:
+        - 1.0.2 (Default)
+        - 1.0.3 (Edge)
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our Code of Conduct.
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
