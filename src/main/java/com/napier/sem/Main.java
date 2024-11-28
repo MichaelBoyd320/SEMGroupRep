@@ -33,6 +33,11 @@ public class Main {
         globalRegions.printRegions(regions, output);
         //
 
+        // Get countries in order of population
+        PopRep popRep = new PopRep(a.con);
+        ArrayList<Country> countriesInPopOrder = popRep.getCountriesPop();
+        popRep.printCountires(countriesInPopOrder);
+
         // Disconnect from database
         a.disconnect();
     }
