@@ -43,11 +43,13 @@ public class PopRep
 
         return countriesPop;
     }
-    public void printCountires(ArrayList<Country> countries)
+    public void printCountires(ArrayList<Country> countries, StringBuilder output)
     {
         for (Country country : countries)
         {
-            System.out.println(country.code + " " + country.name + " " + country.continent + " " + country.population);
+            output.append("Country: " + country.code).append("Population: " + country.population).append("\n");
+
         }
+        System.out.println(output.toString());
     }
 }

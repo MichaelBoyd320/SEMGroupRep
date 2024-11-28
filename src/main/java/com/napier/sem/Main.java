@@ -36,8 +36,8 @@ public class Main {
         // Get countries in order of population
         PopRep popRep = new PopRep(a.con);
         ArrayList<Country> countriesInPopOrder = popRep.getCountriesPop();
-        StringBuilder popoutput = new StringBuilder();
-        popRep.printCountires(countriesInPopOrder, popoutput);
+        output = new StringBuilder();
+        popRep.printCountires(countriesInPopOrder, output);
 
         // Disconnect from database
         a.disconnect();
