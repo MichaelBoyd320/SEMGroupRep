@@ -22,7 +22,7 @@ body:
     id: wheres-the-problem
     attributes:
       label: Where do you need help?
-      description: Where in our problem do you require help?
+      description: Where in our program do you require help?
       placeholder: Tell us which part of the program is causing issues
       value: "Need help with this"
     validations:
