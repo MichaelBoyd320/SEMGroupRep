@@ -66,6 +66,7 @@ public class MainIntegrationTest {
     {
         PopRep popRep = new PopRep(main.con);
         ArrayList<Country> countriesInPopOrder = popRep.getCountriesPop();
-        popRep.printCountires(countriesInPopOrder);
+        StringBuilder output = new StringBuilder();
+        popRep.printCountires(countriesInPopOrder, output);
     }
 }

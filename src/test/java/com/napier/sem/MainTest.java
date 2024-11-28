@@ -80,4 +80,5 @@ public class MainTest {
         // Check if the output is correct
         assertEquals(expectedOutput, output.toString());
     }
+
 }
