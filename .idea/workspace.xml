@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e507775-62a4-455b-a6c1-0f4c309ff993" name="Changes" comment="changed details in yml">
-      <change afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/config.yml" afterDir="false" />
+    <list default="true" id="7e507775-62a4-455b-a6c1-0f4c309ff993" name="Changes" comment="added config.yml">
+      <change afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/2-feature-request.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/3-issues.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/4-support.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/issue_form.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/1-bug.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +211,7 @@
       <workItem from="1732194444618" duration="2790000" />
       <workItem from="1732651650567" duration="167000" />
       <workItem from="1732654136046" duration="631000" />
-      <workItem from="1732808835938" duration="658000" />
+      <workItem from="1732808835938" duration="1943000" />
     </task>
     <task id="LOCAL-00001" summary="Merge feature into develop">
       <option name="closed" value="true" />
@@ -329,7 +333,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732809288845</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="added config.yml">
+      <option name="closed" value="true" />
+      <created>1732809577759</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1732809577759</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,7 +369,8 @@
     <MESSAGE value="Pulled from master" />
     <MESSAGE value="yaml to yml" />
     <MESSAGE value="changed details in yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed details in yml" />
+    <MESSAGE value="added config.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="added config.yml" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/semAssessment$MainTest.ic" NAME="MainTest Coverage Results" MODIFIED="1731596499930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
