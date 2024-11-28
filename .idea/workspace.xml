@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e507775-62a4-455b-a6c1-0f4c309ff993" name="Changes" comment="added config.yml">
-      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/1-bug.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/1-bug.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/2-feature-request.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/2-feature-request.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/3-issues.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/3-issues.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/4-support.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/4-support.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,29 +56,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Docker.docker-compose.yml.db: Compose Deployment.executor": "Run",
-    "JUnit.MainIntegrationTest.executor": "Run",
-    "JUnit.MainIntegrationTest.testGetCapitalsInRegion.executor": "Run",
-    "JUnit.MainTest.executor": "Run",
-    "JUnit.MainTest.testprintCapitalsinRegionbyPopulation.executor": "Run",
-    "JUnit.MainTest.testprintRegions.executor": "Run",
-    "Maven.semAssessment [clean].executor": "Run",
-    "Maven.semAssessment [compile].executor": "Run",
-    "Maven.semAssessment [package].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "EliasBayer137-patch-1",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/elias/Desktop/Edinburgh/Software Engineering Methods/Projects/seMethods",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.db: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainIntegrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainIntegrationTest.testGetCapitalsInRegion.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.testprintCapitalsinRegionbyPopulation.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.testprintRegions.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.semAssessment [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.semAssessment [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.semAssessment [package].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;EliasBayer137-patch-1&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/elias/Desktop/Edinburgh/Software Engineering Methods/Projects/seMethods&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.MainTest.testprintCapitalsinRegionbyPopulation">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.napier.sem.Main" />
@@ -338,7 +339,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732809577759</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Changed the mail address to a placeholder">
+      <option name="closed" value="true" />
+      <created>1732812395510</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1732812395510</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +376,8 @@
     <MESSAGE value="yaml to yml" />
     <MESSAGE value="changed details in yml" />
     <MESSAGE value="added config.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="added config.yml" />
+    <MESSAGE value="Changed the mail address to a placeholder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the mail address to a placeholder" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/semAssessment$MainTest.ic" NAME="MainTest Coverage Results" MODIFIED="1731596499930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
