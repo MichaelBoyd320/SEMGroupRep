@@ -13,20 +13,16 @@ public class PopRep
     {
         con = conget;
     }
-    public ArrayList<Country> getCountriesPop()
-    {
+    public ArrayList<Country> getCountriesPop() {
         // creating an initial empty arraylist
         ArrayList countriesPop = new ArrayList();
 
         String getCountires = "SELECT Code, Name, Continent, Population FROM countries ORDER BY population DESC";
 
-        try
-        {
-            Statement stmt = con.createStatement();
-            ResultSet rs = stmt.executeQuery(getCountires);
 
-            while (rs.next())
-            {
+        try (PreparedStatement pstmt = con.prepareStatement(getCountires)) {
+            ResultSet rs = pstmt.executeQuery();
+            while (rs.next()) {
                 Country country = new Country();
                 country.code = rs.getString("Code");
                 country.name = rs.getString("Name");
@@ -34,10 +30,8 @@ public class PopRep
                 country.population = rs.getInt("Population");
                 countriesPop.add(country);
             }
-        }
-        catch (Exception e)
-        {
-
+        } catch (Exception e) {
+            System.out.println(e.toString());
         }
 
 
@@ -45,6 +39,7 @@ public class PopRep
     }
     public void printCountires(ArrayList<Country> countries, StringBuilder output)
     {
+        System.out.println("Printing Countries");
         for (Country country : countries)
         {
             output.append("Country: " + country.code).append("Population: " + country.population).append("\n");
