@@ -17,7 +17,7 @@ public class PopRep
         // creating an initial empty arraylist
         ArrayList countriesPop = new ArrayList();
 
-        String getCountires = "SELECT Code, Name, Continent, Population FROM countries ORDER BY population DESC";
+        String getCountires = "SELECT Code, Name, Continent, Population FROM country ORDER BY population DESC";
 
 
         try (PreparedStatement pstmt = con.prepareStatement(getCountires)) {
