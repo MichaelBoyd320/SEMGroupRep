@@ -52,7 +52,7 @@ public class PopRep
         System.out.println("Printing Countries");
         // say if there is no countries given
         if (countries.size() == 0)
-            System.out.println("There are no countries");
+            output.append("There are no countries");
         else {
             // sorts the list, though the get statements may get them sorted anyway
             countries.sort(Comparator.comparing(Country::getPopulation).reversed());
@@ -63,8 +63,9 @@ public class PopRep
                 output.append("Country: " + country.name).append(" Population: " + country.population).append("\n");
 
             }
-            // prints the output
-            System.out.println(output.toString());
+
         }
+        // prints the output
+        System.out.println(output.toString());
     }
 }
