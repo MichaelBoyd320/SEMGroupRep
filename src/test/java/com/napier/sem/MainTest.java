@@ -115,10 +115,10 @@ public class MainTest {
 
         PR.printCountires(countries,output);
 
-        String expectedOutput = "Country: CONE Population: 1000\n" +
-                "Country: CTWO Population: 500\n" +
-                "Country: CTHREE Population: 456\n" +
-                "Country: CFOUR Population: 12";
+        String expectedOutput = "Country: CTHREE Population: 1000\n" +
+                "Country: CFOUR Population: 500\n" +
+                "Country: CONE Population: 456\n" +
+                "Country: CTWO Population: 12";
         assertTrue(output.toString().contains(expectedOutput));
     }
     @Test
