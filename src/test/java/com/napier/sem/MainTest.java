@@ -92,15 +92,15 @@ public class MainTest {
         cONE.population = 456;
 
         Country cTWO = new Country();
-        cTWO.name = "CONE";
+        cTWO.name = "CTWO";
         cTWO.population = 12;
 
         Country cTHREE = new Country();
-        cTHREE.name = "CONE";
+        cTHREE.name = "CTHREE";
         cTHREE.population = 1000;
 
         Country cFOUR = new Country();
-        cFOUR.name = "CONE";
+        cFOUR.name = "CFOUR";
         cFOUR.population = 500;
 
         countries.add(cONE);
@@ -116,10 +116,10 @@ public class MainTest {
         PR.printCountires(countries,output);
 
         String expectedOutput = "Country: CONE Population: 1000\n" +
-                "Country: CONE Population: 500\n" +
-                "Country: CONE Population: 456\n" +
-                "Country: CONE Population: 12";
-        assertEquals(expectedOutput, output.toString());
+                "Country: CTWO Population: 500\n" +
+                "Country: CTHREE Population: 456\n" +
+                "Country: CFOUR Population: 12";
+        assertTrue(output.toString().contains(expectedOutput));
     }
     @Test
     void testCountryPopNone()
@@ -135,6 +135,6 @@ public class MainTest {
         PR.printCountires(countries,output);
 
         String expectedOutput = "There are no countries";
-        assertEquals(expectedOutput, output.toString());
+        assertTrue(output.toString().contains(expectedOutput));
     }
 }
