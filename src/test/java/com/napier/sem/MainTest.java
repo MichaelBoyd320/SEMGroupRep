@@ -134,7 +134,8 @@ public class MainTest {
 
         PR.printCountires(countries,output);
 
-        String expectedOutput = "There are no countries";
+        String expectedOutput = "Printing Countries\n" +
+                "There are no countries";
         assertTrue(output.toString().contains(expectedOutput));
     }
 }

@@ -50,7 +50,7 @@ public class PopRep
     {
         // prints a title for this part
         System.out.println("Printing Countries");
-
+        // say if there is no countries given
         if (countries.size() == 0)
             System.out.println("There are no countries");
         else {
