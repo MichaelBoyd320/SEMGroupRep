@@ -48,7 +48,8 @@ public class PopRep
     }
     public void printCountires(ArrayList<Country> countries, StringBuilder output)
     {
-        countries.sort(Comparator.comparing(Country::getPopulation));
+        // sorts the list, though the get statements may get them sorted anyway
+        countries.sort(Comparator.comparing(Country::getPopulation).reversed());
 
         // prints a title for this part
         System.out.println("Printing Countries");
