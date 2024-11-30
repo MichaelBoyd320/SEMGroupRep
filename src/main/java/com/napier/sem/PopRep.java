@@ -58,7 +58,7 @@ public class PopRep
         for (Country country : countries)
         {
             // adds all the parts of the list to a output
-            output.append("Country: " + country.code).append(" Population: " + country.population).append("\n");
+            output.append("Country: " + country.name).append(" Population: " + country.population).append("\n");
 
         }
         // prints the output
