@@ -51,17 +51,20 @@ public class PopRep
         // prints a title for this part
         System.out.println("Printing Countries");
 
-        // sorts the list, though the get statements may get them sorted anyway
-        countries.sort(Comparator.comparing(Country::getPopulation).reversed());
+        if (countries.size() == 0)
+            System.out.println("There are no countries");
+        else {
+            // sorts the list, though the get statements may get them sorted anyway
+            countries.sort(Comparator.comparing(Country::getPopulation).reversed());
 
 
-        for (Country country : countries)
-        {
-            // adds all the parts of the list to a output
-            output.append("Country: " + country.name).append(" Population: " + country.population).append("\n");
+            for (Country country : countries) {
+                // adds all the parts of the list to a output
+                output.append("Country: " + country.name).append(" Population: " + country.population).append("\n");
 
+            }
+            // prints the output
+            System.out.println(output.toString());
         }
-        // prints the output
-        System.out.println(output.toString());
     }
 }

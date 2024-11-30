@@ -114,6 +114,12 @@ public class MainTest {
         StringBuilder output = new StringBuilder();
 
         PR.printCountires(countries,output);
+
+        String expectedOutput = "Country: CONE Population: 1000\n" +
+                "Country: CONE Population: 500\n" +
+                "Country: CONE Population: 456\n" +
+                "Country: CONE Population: 12";
+        assertEquals(expectedOutput, output.toString());
     }
     @Test
     void testCountryPopNone()
@@ -127,5 +133,8 @@ public class MainTest {
         StringBuilder output = new StringBuilder();
 
         PR.printCountires(countries,output);
+
+        String expectedOutput = "There are no countries";
+        assertEquals(expectedOutput, output.toString());
     }
 }
