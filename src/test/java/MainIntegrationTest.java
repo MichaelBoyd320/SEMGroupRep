@@ -68,5 +68,9 @@ public class MainIntegrationTest {
         ArrayList<Country> countriesInPopOrder = popRep.getCountriesPop();
         StringBuilder output = new StringBuilder();
         popRep.printCountires(countriesInPopOrder, output);
+
+        String expectedOutput = "Country: CHN Population: 1277558000\n";
+
+        assertTrue(output.toString().contains(expectedOutput));
     }
 }
