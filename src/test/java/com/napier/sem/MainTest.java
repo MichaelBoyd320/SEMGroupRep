@@ -80,5 +80,52 @@ public class MainTest {
         // Check if the output is correct
         assertEquals(expectedOutput, output.toString());
     }
+    @Test
+    void testCountryPopDesc()
+    {
+        // this test is just a regular function test
+        ArrayList<Country> countries = new ArrayList<>();
+        // create some countries to test the display and auto sort
+        // the countries are created and added out of order population wise
+        Country cONE = new Country();
+        cONE.name = "CONE";
+        cONE.population = 456;
 
+        Country cTWO = new Country();
+        cTWO.name = "CONE";
+        cTWO.population = 12;
+
+        Country cTHREE = new Country();
+        cTHREE.name = "CONE";
+        cTHREE.population = 1000;
+
+        Country cFOUR = new Country();
+        cFOUR.name = "CONE";
+        cFOUR.population = 500;
+
+        countries.add(cONE);
+        countries.add(cTWO);
+        countries.add(cTHREE);
+        countries.add(cFOUR);
+
+        PopRep PR = new PopRep(null); // no database needed for testing the print and sort
+
+        // Prepare output
+        StringBuilder output = new StringBuilder();
+
+        PR.printCountires(countries,output);
+    }
+    @Test
+    void testCountryPopNone()
+    {
+        // this is to test how the print reacts to no countries entered
+        ArrayList<Country> countries = new ArrayList<>();
+
+        PopRep PR = new PopRep(null); // no database needed for testing the print and sort
+
+        // Prepare output
+        StringBuilder output = new StringBuilder();
+
+        PR.printCountires(countries,output);
+    }
 }
