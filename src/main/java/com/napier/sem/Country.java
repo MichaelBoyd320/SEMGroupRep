@@ -7,5 +7,5 @@ public class Country
     public String continent;
     public int population;
 
-
+    public int getPopulation() {return population;}
 }
