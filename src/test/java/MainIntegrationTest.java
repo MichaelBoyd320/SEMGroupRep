@@ -5,6 +5,7 @@ import org.junit.jupiter.api.BeforeAll;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.sql.Connection;
+import java.util.ArrayList;
 import java.util.List;
 
 public class MainIntegrationTest {
@@ -58,6 +59,30 @@ public class MainIntegrationTest {
                                 "Continent: Antarctica - Region: Antarctica\n" ;
 
         // Check if the output contains the expected content
+        assertTrue(output.toString().contains(expectedOutput));
+    }
+    @Test
+    void testGetCountriesBasedOnPopulation()
+    {
+        PopRep popRep = new PopRep(main.con);
+        ArrayList<Country> countriesInPopOrder = popRep.getCountriesPop();
+        StringBuilder output = new StringBuilder();
+        popRep.printCountires(countriesInPopOrder, output);
+
+
+
+
+
+
+
+
+        String expectedOutput = "Country: China Population: 1277558000\n"+
+                "Country: India Population: 1013662000\n" +
+                "Country: United States Population: 278357000\n" +
+                "Country: Indonesia Population: 212107000\n" +
+                "Country: Brazil Population: 170115000\n"+
+                "Country: Pakistan Population: 156483000\n";
+
         assertTrue(output.toString().contains(expectedOutput));
     }
 }
