@@ -1,0 +1,67 @@
+name: Request support
+description: Request support from the developer.
+title: "[Support]: "
+labels: ["support"]
+projects: ["semAssessment"]
+assignees:
+  - group23
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this support form!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: Enter your mail address
+    validations:
+      required: false
+  - type: textarea
+    id: wheres-the-problem
+    attributes:
+      label: Where do you need help?
+      description: Where in our program do you require help?
+      placeholder: Tell us which part of the program is causing issues
+      value: "Need help with this"
+    validations:
+      required: true
+  - type: textarea
+    id: whats-the-problem
+    attributes:
+      label: How can we help?
+      description: Also tell us, how we can help you?
+      placeholder: Tell us the specifics about your problem!
+      value: "Support requested!"
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of our software are you running?
+      options:
+        - 1.0.2 (Default)
+        - 1.0.3 (Edge)
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our Code of Conduct.
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
